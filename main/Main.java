@@ -14,18 +14,22 @@ public class Main {
 //		new TestLinkedList02().testLinkedList();
 //		new LinkedHashSet().testLinkedHashSet();
 //		new TestTreeSet().testTreeSet(); 
-		new TestHashMap().testMap();
+//		new TestHashMap().testMap();
 		StudentManager stm = new StudentManager(); 
 		
-		// properties 데이터 삽입 
-//		stm.propertyInsert(new PropertiesStudent("1","홍길동",80)); 
-//		stm.propertyInsert(new PropertiesStudent("2","김유신",60)); 
-//		stm.propertyInsert(new PropertiesStudent("3","신사임당",95)); 
-//		// properties 데이터 저장 
-//		stm.propertyStore(); 
-//		// properties 데이터 입출력 
-//		stm.propertyPrint(); 
-//
+		 //properties 데이터 삽입 
+		stm.propertyInsert(new PropertiesStudent("1","홍길동",80)); 
+		stm.propertyInsert(new PropertiesStudent("2","김유신",60)); 
+		stm.propertyInsert(new PropertiesStudent("3","신사임당",95)); 
+		// properties 데이터 저장 
+		stm.propertyStore(); 
+		// properties 데이터 입출력 
+		stm.propertyPrint(); 
+		
+		
+		
+		
+
 	
 		}
 }

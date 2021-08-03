@@ -19,6 +19,7 @@ public class StudentManager {
 	} 
 	public void propertyStore() { 
 	try { // 설정 파일 저장 시…. 
+		
 	prop.store(new FileWriter(new File("prop.properties")), "Ex_Student.properties"); 
 	System.out.println("학생 데이터 저장 성공!"); 
 	} catch (Exception e) { 
@@ -40,8 +41,10 @@ public class StudentManager {
 	} 
 	System.out.println("학생 데이터 출력이 완료되었습니다."); 
 	} 
+	
 	public PropertiesStudent parseStudent(String str) { // 넘겨 받은 데이터를 학생 객체로 변환 
-	String tmp[] = str.split(", "); 
-	return new PropertiesStudent(tmp[0], tmp[1], Integer.parseInt(tmp[2])); 
+	String tmp[] = str.split(", "); //, 로 잘라내준다 (1,홍길동,점수)
+	
+	return new PropertiesStudent(tmp[0], tmp[1], Integer.parseInt(tmp[2])); //Integer.parseInt() - 문자열을 숫자로 변환
 	}
 }
