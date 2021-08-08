@@ -1,10 +1,10 @@
-package com.kh.practice.run;
+package com.kh.practice.chap01_poly.run;
 
-import com.kh.practice.list.library.view.BookMenu;
+import com.kh.practice.chap01_poly.view.LibraryMenu;
 
 public class Run {
 	public static void main(String[] args) {
-		BookMenu cv=new BookMenu();
-		cv.mainMenu();
+		LibraryMenu pp=new LibraryMenu();
+		pp.mainMenu();
 	}
 }
